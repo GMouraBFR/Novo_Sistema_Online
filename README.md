@@ -1,81 +1,66 @@
-Análise de Teste A/B de Eventos de Marketing 💡
-Este repositório contém uma análise detalhada de um teste A/B aplicado a eventos de marketing, com o objetivo de avaliar o impacto de diferentes estratégias sobre a conversão, a receita e o comportamento do usuário.
+# 💡 Análise de Teste A/B de Eventos de Marketing
 
- Descrição do Projeto
-O projeto analisa dados de um teste A/B para responder perguntas importantes, como:
+Bem-vindo ao repositório! Aqui você encontrará uma análise detalhada de um teste A/B aplicado a eventos de marketing, com o objetivo de avaliar o impacto de diferentes estratégias sobre as taxas de conversão, receita e comportamento dos usuários.
 
-Qual o impacto das estratégias testadas sobre as taxas de conversão?
+---
 
-Existe diferença estatisticamente significativa entre os grupos de teste?
+## 📌 Descrição do Projeto
 
-Quais insights podemos obter sobre a receita e o comportamento dos usuários ao longo do funil?
+O projeto busca responder perguntas-chave relacionadas ao desempenho de estratégias de marketing testadas por meio de um experimento controlado A/B:
 
- Ferramentas e Tecnologias Utilizadas
-Python: Manipulação e análise de dados.
+- Qual o impacto das estratégias sobre as taxas de conversão?  
+- Existe diferença estatisticamente significativa entre os grupos A e B?  
+- Que insights podemos obter sobre receita e comportamento ao longo do funil de conversão?  
 
-Bibliotecas: Pandas, NumPy, SciPy, Matplotlib, Seaborn.
+O objetivo é identificar estratégias mais eficazes e apoiar decisões com base em dados sólidos.
 
-Testes Estatísticos: Teste Z para comparação de proporções.
+---
 
- Estrutura do Projeto
-Coleta e Tratamento de Dados:
+## 🛠️ Ferramentas e Tecnologias Utilizadas
 
-Carregamento de datasets com eventos, novos usuários e participantes do teste.
+- **Python**: Manipulação e análise de dados.
+- **Bibliotecas**: Pandas, NumPy, SciPy, Matplotlib e Seaborn.
+- **Testes Estatísticos**: Aplicação de Teste Z para comparação de proporções e avaliação de significância.
 
-Filtragem do período do teste e tratamento de valores ausentes.
+---
 
-Análises Explorativas:
+## 📂 Estrutura do Projeto
 
-Identificação e cálculo da proporção de usuários duplicados entre os grupos de teste.
+- **Coleta e Tratamento de Dados**:  
+  - Carregamento de datasets, incluindo eventos, novos usuários e participantes do teste.
+  - Filtragem do período do experimento e tratamento de valores ausentes.
 
-Distribuição de eventos ao longo do tempo e sazonalidade.
+- **Análises Exploratórias**:  
+  - Cálculo da proporção de usuários duplicados entre os grupos.  
+  - Identificação de padrões sazonais e distribuição de eventos ao longo do tempo.  
 
-Taxas de Conversão e Testes Estatísticos:
+- **Taxas de Conversão e Testes Estatísticos**:  
+  - Análise das taxas de conversão por etapa do funil (ex.: product_page → product_cart → purchase).  
+  - Teste Z para verificar a significância estatística das diferenças entre os grupos A e B.  
 
-Cálculo de taxas de conversão em cada etapa do funil para os grupos A e B.
+- **Visualizações**:  
+  - Gráficos para explorar taxas de conversão, sazonalidade e distribuição de receita.  
 
-Análise estatística (teste Z) para verificar a significância das diferenças entre os grupos.
+---
 
-Visualizações:
+## 📊 Exemplos de Visualizações
 
-Gráficos que destacam taxas de conversão, distribuição de receita e sazonalidade.
+1. **Distribuição de Eventos Diários**  
+   Um gráfico de linha destacando a frequência de eventos ao longo do tempo, com ênfase no período do teste e datas sazonais.  
 
- Exemplos de Visualizações
-1. Distribuição de Eventos Diários
-Um gráfico de linha exibindo a frequência de eventos por dia, com destaques para o período de teste e datas sazonais (ex.: Natal e Ano Novo).
+2. **Receita Cumulativa por Grupo**  
+   Gráfico de linha mostrando a receita acumulada dos grupos A e B durante o experimento.
+
+3. **Taxa de Conversão por Etapa do Funil**  
+   Gráfico de barras comparando as taxas de conversão para os grupos A e B em cada etapa (ex.: product_page → product_cart → purchase).  
+
+4. **Duplicação de Usuários entre os Grupos**  
+   Análise detalhando a proporção de usuários duplicados presentes em ambos os grupos.  
+
+5. **Resultados do Teste Estatístico (Teste Z)**  
+   Para cada etapa do funil, calculamos os seguintes indicadores:
+   - **Z-score**: Mede a diferença em desvios padrão.  
+   - **P-value**: Determina a significância a um nível de 5% (0,05).  
+   - **Significância**: Se a diferença é estatisticamente relevante.  
 
 
-2. Receita Cumulativa por Grupo
-Gráfico de linha comparando a receita cumulativa dos grupos A e B durante o teste.
-
-
-3. Taxa de Conversão por Etapa do Funil
-Gráfico de barras apresentando as taxas de conversão em cada etapa do funil (product_page, product_cart, purchase) para os grupos A e B.
-
-
-4. Duplicação de Usuários entre os Grupos
-A análise identificou duplicatas no conjunto de participantes. Cerca de X% dos usuários estavam presentes em ambos os grupos, o que pode influenciar os resultados do teste.
-
-5. Teste Estatístico (Teste Z)
-Executamos um teste Z para verificar se as diferenças observadas nas taxas de conversão entre os grupos A e B são estatisticamente significativas. Para cada etapa do funil:
-
-Z-score: Mede a diferença em desvios padrão.
-
-P-value: Indica se a diferença é significativa a um nível de 5% (0,05).
-
-Exemplos de Resultados:
-Etapa do Funil: product_page → product_cart
-
-Z-score: X
-
-P-value: Y
-
-Significância: Sim/Não
-
-Etapa do Funil: product_cart → purchase
-
-Z-score: X
-
-P-value: Y
-
-Significância: Sim/Não
